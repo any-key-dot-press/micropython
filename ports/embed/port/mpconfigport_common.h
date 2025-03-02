@@ -33,7 +33,7 @@ typedef uintptr_t mp_uint_t; // must be pointer size
 typedef long mp_off_t;
 
 // Need to provide a declaration/definition of alloca()
-#if defined(__FreeBSD__) || defined(__NetBSD__)
+#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__)
 #include <stdlib.h>
 #else
 #include <alloca.h>
